@@ -153,7 +153,12 @@ section {
 }
 
 .logo {
-  margin-left: 50px;
+  
+  align-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
 
  
 }
@@ -162,11 +167,17 @@ section {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-size: large;
+align-content: center;
+  text-align: center;
+  
+  justify-content: center;
 }
 .mapa {
-  margin: 20px;
-  margin-top: 20px;
+  margin: 150px;
+  margin-top: 100px;
   align-content: center;
   text-align: center;
+  display: flex;
+  justify-content: center;
   
 }
