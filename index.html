@@ -21,57 +21,60 @@
           </div>
   
             <div class="col-lg-12 mt-6 mt-lg-0 d-flex align-items-stretch">
-              <form action="forms/contact.php" method=post name="formulario" role="form" class="php-email-form">
+              <form action="" method=post name="formulario" id="formulario" role="form" class="php-email-form">
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" placeholder="Ingrese su nombre" data-msg="Por favor, introduzca su nombre" />
+                    <input type="text" name="name" class="form-control" id="nombre" data-rule="minlen:4" placeholder="Ingrese su nombre" data-msg="Por favor, introduzca su nombre" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="name">Apellido</label>
-                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" placeholder="Ingrese sus apellidos" data-msg="Por favor, introduzca sus apellidos" />
+                    <input type="text" name="apellido" class="form-control" id="apellido" data-rule="minlen:4" placeholder="Ingrese sus apellidos" data-msg="Por favor, introduzca sus apellidos" />
                     <div class="validate"></div>
                   </div>
-                  <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <div id="tipoDocumento">
+                    <div class="form-check form-check-inline col-md-12">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tipoDocumento" value="TI">
                     <label class="form-check-label" for="inlineRadio1">Tarjeta de identidad</label>
-                  </div>
-                  <div class="form-check form-check-inline ">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    </div>
+                    <div class="form-check form-check-inline ">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tipoDocumento" value="CC">
                     <label class="form-check-label" for="inlineRadio2">Cédula de ciudadanía</label>
-                  </div>
-                  <div class="form-check form-check-inline col-md-12">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    </div>
+                    <div class="form-check form-check-inline col-md-12">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tipoDocumento" value="PASAPORTE">
                     <label class="form-check-label" for="inlineRadio2">Pasaporte</label>
-                  </div> 
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    </div> 
+                    <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="tipoDocumento" value="PEP">
                     <label class="form-check-label" for="inlineRadio2">PEP</label>
+                    </div>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="name">Número de documento</label>
-                    <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" placeholder="Ingrese su número de documento" data-msg="Por favor, introduuzca un número de 10 dígitos" />
+                    <input type="text" name="name" class="form-control" id="documento" data-rule="minlen:4" placeholder="Ingrese su número de documento" data-msg="Por favor, introduuzca un número de 10 dígitos" />
                     <div class="validate"></div>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="name">Correo</label>
-                    <input type="email" class="form-control" name="email" id="email" data-rule="email" placeholder="Ingrese su correo" data-msg="Por favor, introduzca un correo electrónico válido" />
+                    <input type="email" class="form-control" name="email" id="correo" data-rule="email" placeholder="Ingrese su correo" data-msg="Por favor, introduzca un correo electrónico válido" />
                     <div class="validate"></div>
                   </div>
                   
                 </div>
                 <div class="form-group">
                   <label for="name">Observaciones</label>
-                  <textarea class="form-control" name="message" rows="10" data-rule="required" placeholder="Ingrese una opinión" data-msg="Por favor, escriba algo para nosotros"></textarea>
+                  <textarea class="form-control" name="message" id="observaciones" rows="10" data-rule="required" placeholder="Ingrese una opinión" data-msg="Por favor, escriba algo para nosotros"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
                   <div class="loading">Cargando</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Su mensaje ha sido enviado. Gracias.</div>
+                </div col-md-12>
+                  <button class="btn btn-info boton" id="btn-form" type="submit">Enviar</button>
                 </div>
-                  <a href="javascript:enviar_formulario()"><div class="text-center"><button type="submit">Enviar</button></div></a>
               </form>
             </div>
   
@@ -103,7 +106,6 @@
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="assets/vendor/counterup/counterup.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>

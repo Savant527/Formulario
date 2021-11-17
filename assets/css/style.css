@@ -181,3 +181,11 @@ align-content: center;
   justify-content: center;
   
 }
+.boton {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-self: center;
+  align-items: center;
+
+}
